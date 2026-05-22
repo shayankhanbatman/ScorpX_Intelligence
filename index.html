@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCORPX INTELLIGENCE DASHBOARD | Cyber Profile OSINT</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <main id="main-content">
+        <div class="container py-4">
+            <div class="hero-section mb-5">
+                <div class="glitch-text" data-text="SOC INTELLIGENCE DASHBOARD">SCORPX INTELLIGENCE DASHBOARD</div>
+                <p class="subtitle">OSINT Profile Database | Real-time Threat Intelligence</p>
+                <div class="typing-container">
+                    <span id="typing-text"></span><span class="cursor">_</span>
+                </div>
+            </div>
+            
+            <!-- Enhanced Search Bar Section -->
+            <div class="search-container mb-4">
+                <div class="search-card">
+                    <div class="search-header">
+                        <i class="fas fa-search"></i>
+                        <span>INTELLIGENCE SEARCH</span>
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <div class="search-body">
+                        <div class="search-input-wrapper">
+                            <i class="fas fa-filter search-icon-left"></i>
+                            <input type="text" id="searchInput" placeholder="Search by name, city, age, phone, or CNIC..." autocomplete="off">
+                            <button id="clearSearch" class="clear-btn" style="display: none;">
+                                <i class="fas fa-times"></i>
+                            </button>
+                            <i class="fas fa-microphone voice-search"></i>
+                        </div>
+                        
+                        <!-- Filter Chips -->
+                        <div class="filter-chips">
+                            <span class="filter-chip active" data-filter="all">
+                                <i class="fas fa-database"></i> ALL PROFILES
+                            </span>
+                            <span class="filter-chip" data-filter="name">
+                                <i class="fas fa-user"></i> NAME
+                            </span>
+                            <span class="filter-chip" data-filter="city">
+                                <i class="fas fa-city"></i> CITY
+                            </span>
+                            <span class="filter-chip" data-filter="age">
+                                <i class="fas fa-calendar"></i> AGE
+                            </span>
+                            <span class="filter-chip" data-filter="phone">
+                                <i class="fas fa-phone"></i> PHONE
+                            </span>
+                        </div>
+                        
+                        <!-- Search Stats -->
+                        <div id="searchStats" class="search-stats" style="display: none;">
+                            <i class="fas fa-chart-line"></i>
+                            <span id="resultCount">0</span> results found in <span id="searchTime">0</span>ms
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stats-bar mb-4">
+                <div class="stat-card"><i class="fas fa-users"></i> <span id="total-profiles">0</span> Active Profiles</div>
+                <div class="stat-card"><i class="fas fa-shield-alt"></i> Security Level: MAXIMUM</div>
+                <div class="stat-card"><i class="fas fa-database"></i> Encrypted Database</div>
+            </div>
+            
+            <div id="profiles-grid" class="row g-4"></div>
+            
+            <!-- No Results Message -->
+            <div id="noResults" class="no-results" style="display: none;">
+                <i class="fas fa-skull-crossbones"></i>
+                <h3>NO MATCHING PROFILES</h3>
+                <p>Search parameters did not match any records in the database</p>
+                <button onclick="resetSearch()" class="reset-search-btn">
+                    <i class="fas fa-sync-alt"></i> Reset Search
+                </button>
+            </div>
+        </div>
+    </main>
+    <div id="footer-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="components.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

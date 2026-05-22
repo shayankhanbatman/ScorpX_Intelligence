@@ -1,0 +1,31 @@
+{
+    "profiles": [
+        {
+            "id": 1,
+            "name": "Shayan Khan",
+            "fatherName": "Sher Muhammad",
+            "cnic": "42501-2920465-5",
+            "phone": "0325 7011 671",
+            "city": "Karachi",
+            "address": "Street 123 Landhi Karachi, Malir Karachi",
+            "postalCode": "76666787",
+            "age": 18,
+            "brief": "Senior Threat Intelligence Analyst specializing in APT detection and malware analysis. Former Kaspersky researcher with 12+ years experience in cybersecurity operations.",
+            "image": "testing.png"
+        },
+         {
+            "id": 2,
+            "name": "Muhammad Haziq Shafiq",
+            "fatherName": "Muhammad Shafiq",
+            "cnic": "32502-1397516-9",
+            "phone": "0325 7011 671",
+            "city": "Karachi",
+            "address": "",
+            "postalCode": "",
+            "dateofbirth": "8-Nov-2007",
+            "age": 19,
+            "brief": "Computer Operator at AGI, id 2303486, DOJ AGI 3-mar-2026",
+            "image": "hazik shafique.png"
+        }
+    ]
+}
