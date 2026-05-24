@@ -18,14 +18,28 @@
             "name": "Muhammad Haziq Shafiq",
             "fatherName": "Muhammad Shafiq",
             "cnic": "32502-1397516-9",
-            "phone": "0325 7011 671",
+            "phone": "0371 8001 441",
             "city": "Karachi",
             "address": "",
             "postalCode": "",
             "dateofbirth": "8-Nov-2007",
             "age": 19,
-            "brief": "Computer Operator at AGI, id 2303486, DOJ AGI 3-mar-2026",
+            "brief": "Computer Operator at AGI, id 2303486, DOJ AGI 3-mar-2026, sallary 50K, cant do anything without bakchodi, has a little bit relation with DSR.AGI Iqbal, due to his Friend Uzair who also works in AGI 2026..Uzair Phone Number (0335 7774 310)",
             "image": "hazik shafique.png"
+        },
+        {
+            "id": 3,
+            "name": "Muhammad Imran Aslam",
+            "fatherName": "",
+            "cnic": "42201-3737677-9",
+            "phone": "0322 2941 436",
+            "city": "Karachi",
+            "address": "WirelessGate, Malir Karachi",
+            "postalCode": "",
+            "dateofbirth": "",
+            "age": 2000000,
+            "brief": "Chemical store manager at AGI, looks like gay but he is not, use drugs and alcohol once he was finding a person who can buy MDMA from darkweb for him, sallary in 2026, 140K, AGI ID (2302650)",
+            "image": "imran aslam.png"
         }
     ]
 }
